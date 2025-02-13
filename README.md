@@ -1,2 +1,3 @@
-# spp-debug-tools
-Tools for debugging sppsvc
+# spp-stuff
+
+Collection of random stuff
