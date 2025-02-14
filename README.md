@@ -13,5 +13,5 @@ Collection of random stuff
 
 ## Credits
 
-asdcorp, abbodi, Lyssa - ImHex patterns
-asdcorp - SPP debug setup, `tokens_rebuild_v2.py`
+- asdcorp, abbodi, Lyssa - ImHex patterns
+- asdcorp - SPP debug setup, `tokens_rebuild_v2.py`
