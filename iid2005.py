@@ -98,7 +98,7 @@ def decode_iid(iid):
     security = (iid_raw >> 39) & ((1 << 10) - 1)
     hwid_short = (iid_raw >> 64) & ((1 << 64) - 1)
 
-    return hwid_short, security, group, serial, upgrade
+    return hwid_short, group, serial, security, upgrade
 
 def encode_iid(hwid_short, group, serial, security, upgrade):
     iid_raw = 1
@@ -147,7 +147,7 @@ if __name__ == '__main__':
 
     match arg.mode:
         case 'decode':
-            hwid, security, group, serial, upgrade = decode_iid(arg.iid)
+            hwid, group, serial, security, upgrade = decode_iid(arg.iid)
 
             print('\nIID      : [%s]\n' % (str(arg.iid)))
             print('            0xffffffffffffffff')
