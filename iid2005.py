@@ -100,7 +100,7 @@ def decode_iid(iid):
 
     return hwid_short, security, group, serial, upgrade
 
-def encode_iid(hwid_short, security, group, serial, upgrade):
+def encode_iid(hwid_short, group, serial, security, upgrade):
     iid_raw = 1
     iid_raw |= ((upgrade & 1) << 8)
     iid_raw |= ((serial & ((1 << 30) - 1)) << 9)
